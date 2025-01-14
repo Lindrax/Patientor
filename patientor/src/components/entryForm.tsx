@@ -100,17 +100,17 @@ const EntryForm = ({
 
   const renderCommonFields = () => (
     <>
-      <label>Description</label>
+      <label>Description: </label>
       <input value={desc} onChange={(e) => setDesc(e.target.value)} />
-      <label>Date</label>
+      <label> Date: </label>
       <input
         type="date"
         value={date}
         onChange={(e) => setDate(e.target.value)}
       />
-      <label>Specialist</label>
+      <label> Specialist: </label>
       <input value={spec} onChange={(e) => setSpec(e.target.value)} />
-      <label>Diagnosis Codes (comma-separated)</label>
+      <label> Diagnosis Codes (comma-separated): </label>
       <input
         value={diagnosisCodes}
         onChange={(e) => setDiagnosisCodes(e.target.value)}
@@ -125,7 +125,7 @@ const EntryForm = ({
           <h4>New {type} entry</h4>
           <form onSubmit={handleSubmit}>
             {renderCommonFields()}
-            <label>Healthcheck Rating</label>
+            <label> Healthcheck Rating: </label>
             <input
               type="number"
               min="0"
@@ -143,18 +143,18 @@ const EntryForm = ({
           <h4>New {type} entry</h4>
           <form onSubmit={handleSubmit}>
             {renderCommonFields()}
-            <label>Employer Name</label>
+            <label> Employer Name: </label>
             <input
               value={employerName}
               onChange={(e) => setEmployerName(e.target.value)}
             />
-            <label>Sick Leave Start Date</label>
+            <label> Sick Leave Start Date: </label>
             <input
               type="date"
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
             />
-            <label>Sick Leave End Date</label>
+            <label> Sick Leave End Date: </label>
             <input
               type="date"
               value={endDate}
@@ -170,13 +170,13 @@ const EntryForm = ({
           <h4>New {type} entry</h4>
           <form onSubmit={handleSubmit}>
             {renderCommonFields()}
-            <label>Discharge Date</label>
+            <label> Discharge Date: </label>
             <input
               type="date"
               value={dischargeDate}
               onChange={(e) => setDischargeDate(e.target.value)}
             />
-            <label>Discharge Criteria</label>
+            <label> Discharge Criteria: </label>
             <input
               value={criteria}
               onChange={(e) => setCriteria(e.target.value)}
