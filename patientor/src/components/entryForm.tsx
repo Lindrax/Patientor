@@ -78,7 +78,7 @@ const EntryForm = ({
     }
 
     axios
-      .post(`http://localhost:3001/api/patients/${id}/entries`, entry)
+      .post(`/api/patients/${id}/entries`, entry)
       .then((response) => {
         console.log(response.data);
         patient.entries.push(response.data);

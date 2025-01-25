@@ -14,14 +14,14 @@ const SinglePatient = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/api/patients/${id}`)
+      .get(`/api/patients/${id}`)
       .then((response) => setPatient(response.data as Patient));
   }, [id, update]);
   console.log(patient);
 
   useEffect(() => {
     const fetchDiagnoses = async () => {
-      const response = await axios.get('http://localhost:3001/api/diagnoses');
+      const response = await axios.get('/api/diagnoses');
       setDiagnoses(response.data);
     };
     fetchDiagnoses();
