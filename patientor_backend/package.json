@@ -4,10 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && cd ../patientor/ && npm run build && cp -r dist ../patientor_backend",
     "tsc": "tsc",
     "dev": "ts-node-dev src/index.ts",
     "lint": "eslint --ext ts .",
-    "start": "node build/src/index.js"
+    "start": "node build/src/index.js",
+    "deploy": "npm run build && npm start"
   },
   "author": "",
   "license": "ISC",
