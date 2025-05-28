@@ -1,4 +1,4 @@
-Hosted at: https://patientor-by-axel-gchzejd7g6b4gub9.northeurope-01.azurewebsites.net/
+Hosted at: https://patientor-n678.onrender.com/ (might take some time to load)
 
 TypeScript App for managing healthcare entries for patients.
 
