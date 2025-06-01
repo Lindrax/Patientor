@@ -69,7 +69,3 @@ TypeScript App for managing healthcare entries for patients.
 
 ---
 
-## Acknowledgements
-
-- Inspired by the need for efficient patient data management in healthcare.
-- Built as a personal project to explore the MERN stack and TypeScript integration.
